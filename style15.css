@@ -20,6 +20,46 @@ body {
 
 /* Header */
 header {
-	height: 80px;
-	background: #333333;
+	height: 81px;
+	background: #1d2126;
+	
+
+}
+
+header .container h1 {
+	height: 81px;
+	line-height: 81px;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .container ul li {
+	display: inline;
+	line-height: 81px;
+}
+
+header .container ul li a {
+	display: inline-block;
+	height: 30px;
+	line-height: 26px;
+	padding: 0px 10px;
+	margin-left: 16px;
+	border-radius: 3px;
+	color: #a4aead;
+	text-transform: uppercase;
+	border: 2px solid transparent;
+	font-size: 14px;
+}
+
+header .container ul li a:hover {
+	border: 2px solid #5b6168;
+
+}
+
+header .container ul li a.active {
+	border: 2px solid #23b7a4;
+	color: #23b7a4;
 }
