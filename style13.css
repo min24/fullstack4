@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+.container {
+	width: 980px;
+	margin: 20px auto;
+}
+
+.container .block-header {
+
+border-bottom: 1px solid black;
+}
+
+.container .block-header h3 {
+	display: inline-block;
+	background: blue;
+	color: white;
+	font-weight: normal;
+	padding: 7px 15px;
+	font-size: 15px;
+}
+
+.container ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.container ul li {
+	flex-basis: 25%;
+height: 40px;
+line-height: 40px;
+background-image: url(https://stc-laban.zdn.vn/v5/images/ic_cate_small.png);
+background-repeat: no-repeat;
+}
+
+
+.container ul li a {
+text-decoration: none;
+color: black;
+padding: 3px 0px;
+padding-left: 25px;
+}
+
+.container ul li a:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+.container ul li:nth-child(1) {
+	background-image: url(https://2-stc-laban.zdn.vn/thumbarticle/1437968024.jpg);
+	background-position: 0px 5px;
+}
+
+.container ul li:nth-child(2) {
+	background-position: 0px -2304px;}
+
+.container ul li:nth-child(3) {
+	background-position: 0px -259px;}
+
+.container ul li:nth-child(4) {
+	background-position: 0px -2224px;
+}
+
+.container ul li:nth-child(5) {
+	background-position: 0px calc(-52px*4);
+}
+
+.container ul li:nth-child(6) {
+	background-position: 0px calc(-52px*5);
+}
+
+.container ul li:nth-child(7) {
+	background-position: 0px calc(-52px*6);
+}
+
+.container ul li:nth-child(8) {
+	background-position: 0px calc(-52px*7);
+}
+
+.container ul li:nth-child(9) {
+	background-position: 0px calc(-52px*8);
+}
+
+.container ul li:nth-child(10) {
+	background-position: 0px calc(-52px*9);
+}
+
+.container ul li:nth-child(11) {
+	background-position: 0px calc(-52px*10);
+}
+
+.container ul li:nth-child(12) {
+	background-position: 0px calc(-52px*11);
+}
+
+
+.container ul li:nth-child(13) {
+	background-position: 0px calc(-52px*12);
+}
+
+.container ul li:nth-child(14) {
+	background-position: 0px calc(-52px*13);
+}
+
+.container ul li:nth-child(15) {
+	background-position: 0px calc(-52px*14);
+}
+
+.container ul li:nth-child(16) {
+	background-position: 0px calc(-52px*15);
+}
+
+.container ul li:nth-child(17) {
+	background-position: 0px calc(-52px*16);
+}
+
+.container ul li:nth-child(18) {
+	background-position: 0px calc(-52px*17);
+}
+
+.container ul li:nth-child(19) {
+	background-position: 0px calc(-52px*18);
+}
+
+.container ul li:nth-child(20) {
+	background-position: 0px calc(-52px*19);
+}
+

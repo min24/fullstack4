@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#box {
+	background: red;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	opacity: 0.5;
+}
+
+body {
+	padding-top: 50px;
+}
+
+#ads {
+	height: 250px;
+	background: yellow;
+}
+
+header {
+	background: black;
+	position: sticky;
+	top: 20px;
+
+}
+
+h1 {
+	color: white;
+}
+
+#slider {
+	background: #674840;
+	width: 500px;
+	margin: 20px auto;
+	height: 350px;
+	border: 1px solid black;
+	position: relative;
+	display: flex;
+align-items: center;
+}
+
+#prev1 {
+
+	position: absolute;
+	left: 10px;
+
+}
+
+#next1 {
+	position: absolute;
+	right: 10px;
+}
+
+#prev {
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 50px;
+	margin-top: -25px;
+
+}
+
+#next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 50px;
+	margin-top: -25px;
+}
+
+
+
+#wrapper {
+	background: yellow;
+	padding: 50px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#box2 {
+	width: 500px;
+	height: 350px;
+	border: 1px solid black;
+	margin: 20px auto;
+	overflow: scroll;
+
+	background-color: gray;
+	background-image: url(images/3.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* background: yellow url(images/3.jpeg) no-repeat 20px 30px; */
+	background-size: cover;
+	/* background-attachment: fixed; */
+	background-attachment: scroll;
+
+
+}
+
+#box3 {
+	height: 350px;
+	border: 1px solid black;
+	margin: 20px auto;
+
+	background-attachment: scroll;
+	background: transparent url(images/4.png) no-repeat left top;
+	background-size: cover;
+}
+
+#box4 {
+	height: 350px;
+	border: 1px solid black;
+	margin: 20px auto;
+
+	background-attachment: scroll;
+	background-color: #41a499;
+	background-image: url(images/2.jpeg), url(images/4.png);
+	background-repeat: no-repeat, repeat; 
+	background-position: left top, left top;
+	background-size: auto, auto;
+}

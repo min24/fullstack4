@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#wrapper {
+display: flex;
+width: 1000px;
+flex-wrap: wrap;
+
+}
+
+#wrapper div {
+	border: 1px solid black;
+	height: 200px;
+
+}
+
+#wrapper div:nth-child(4n + 1){
+	flex-basis: 40%;
+}
+#wrapper div:not(:nth-child(4n + 1)){
+		flex-basis: 20%;
+}
+
+h1 {
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	word-break: break-all;
+	font-family: ThuPhapBucThu, Roboto, "Times New Roman", sans-serif;
+}
+
+@font-face {
+font-family: ThuPhapBucThu;
+src: url(fonts/UVNButLong1.ttf);
+	font-weight: bold;
+
+}
+
+
+@font-face {
+font-family: BenXuan;
+src: url(fonts/FontThuPhap/UVNBenXuan_B.TTF);
+	font-weight: bold;
+
+}
+
+@font-face {
+	font-family: BenXuan;
+	src: url(fonts/FontThuPhap/UVNBenXuan_R.TTF);
+	font-weight: normal;
+}
+
+p {
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	word-break: break-all;
+	font-family: BenXuan, Roboto, "Times New Roman", sans-serif;
+	font-weight: bold;
+}
+
+
+#menu {
+	background: #ebebeb;
+}
+
+ul#menu li {
+	display: inline-block;
+
+}
+
+ul#menu li a {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+
+i {
+	font-size: 50px;
+	color: red;
+}

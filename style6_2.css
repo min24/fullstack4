@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	height: 50px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+h1 {
+	color: white;
+
+}
+
+ul li {
+	display: inline-block;
+}
+ul li a {
+	color: white;
+}
+
+#wrapper {
+	width: 500px;
+	height: 400px;
+	border: 2px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#child {
+	width: 100px;
+	height: 80px;
+	border: 2px solid black;
+
+}

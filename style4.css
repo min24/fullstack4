@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+
+}
+#trangchu {
+	float: left;
+	width: 300px;
+	border: 1px solid red;
+}
+
+#des {
+	float: left;
+	width: calc(100% - 300px);
+	border: 1px solid green;
+}
+#sidebar {
+	float: left;
+	width: 300px;
+	border: 1px solid red;
+}
+
+#sidebar2 {
+	float: left;
+	width: 300px;
+	border: 1px solid purple;
+}
+
+#content {
+	float: left;
+	width: calc(100% - 600px);
+	border: 1px solid green;
+}
+
+#person {
+	float: left;
+	width: 350px;
+	background: yellow;
+	border: 1px solid black;
+	padding: 20px;
+	display: block;
+clear: left;
+}
+
+.block {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+#sidebar3 {
+	float: left;
+	width: 300px;
+	background: pink;
+	display: inline;
+	clear: left;
+	clear: both;
+
+}
+
+#content3 {
+	float: left;
+	width: calc(100% - 300px);
+	background: green;
+}
+
+#sidebar4 {
+	float: left;
+	width: 300px;
+	background: pink;
+	display: inline;
+	clear: left;
+	clear: both;
+
+}
+
+#content4 {
+	float: right;
+	width: calc(100% - 300px);
+	background: green;
+}
+
+.clr {
+	clear: both;
+}
+
+#wrapper {
+	background: linear-gradient(to right, pink 300px, green 300px);
+}
+
+#sidebar5 {
+	float: left;
+	width: 300px;
+
+	display: inline;
+	clear: left;
+	clear: both;
+
+}
+
+#content5 {
+	float: right;
+	width: calc(100% - 300px);
+
+}

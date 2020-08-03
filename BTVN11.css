@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+body {
+	padding: 50px;
+}
+
+label.btn input {
+	display: none;
+}
+
+label.btn > span {
+	height: 50px;
+	width: 100px;
+	border: 2px solid black;
+	display: inline-block;
+	background: pink;
+	border-radius: 25px;
+	position: relative;
+}
+
+label.btn > span > span {
+	display: inline-block;
+height: 46px;
+width: 46px;
+background: white;
+border-radius: 50%;
+position: absolute;
+left: 1px;
+top: 0px;
+
+}
+
+label.btn input:checked + span > span {
+
+right: 1px;
+left: auto;
+}
+
+label.btn input:checked + span {
+	background: green;
+}
+
+/*========================================*/
+div.tab {
+	width: 300px;
+}
+
+div.tab .tab-header {
+	background: #d6d6d6;
+display: flex;
+	justify-content: space-between;
+
+
+}
+div.tab .tab-header label {
+	
+	width: 33%;
+border: 1px solid black;
+}
+
+
+
+div.tab .tab-content div {
+display: none;
+}
+
+div.tab input {
+	display: none;
+}
+
+div.tab input:checked + div {
+	display: block;
+}
+
+/*======================================= */
+
+#urs {
+	height: 50px;
+	width: 50px;
+}
+
+#urs i {
+	line-height: 50px;
+	font-size: 50px;
+	color: green;
+}
+
+/*================HOVER ME===============*/
+button.hover-me {
+	height: 50px;
+	width: 200px;
+	border-radius: 27px;
+	position: relative;
+margin: 10px;
+}
+
+button.hover-me span:first-child {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	left: 30px;
+	top: 13px;
+
+}
+
+
+button.hover-me span:last-child {
+height: 46px;
+width: 46px;
+border-radius: 23px;
+background: rgba(256,256,256,0.4);
+position: absolute;
+right: 0px;
+top: 0px;
+color: white;
+font-weight: bold;
+
+}
+
+button.hover-me span:last-child > i {
+
+position: absolute;
+right: 13px;
+top: 13px;
+color: white;
+font-weight: bold;
+
+}
+#icon1 {
+	background: orange;
+		border: 2px solid orange;
+
+}
+
+#icon2 {
+	background: blue;
+		border: 2px solid blue;
+
+}
+
+#icon3 {
+	background: green;
+		border: 2px solid green;
+	height: 50px;
+	width: 200px;
+	border-radius: 27px;
+	position: relative;
+margin: 10px;
+
+}
+
+
+#icon3 span:first-child {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	right: 30px;
+	top: 13px;
+
+	
+}
+
+#icon3 span:last-child > i {
+	
+	position: absolute;
+left: 13px;
+top: 13px;
+color: white;
+font-weight: bold;
+
+
+}
+

@@ -1,0 +1,101 @@
+
+#ten-lop-hoc {
+	color: red;
+	font-size: 30px;
+}
+
+#loi-chao {
+	color: blue;
+	font-size: 30px;
+}
+
+.hoc-vien {
+	background: yellow;
+	font-size: 20px;
+}
+
+#menu {
+	border: 2px solid red;
+}
+
+#menu li {
+	border-bottom: 1px solid green;
+}
+
+#menu li a {
+	color: orange;
+}
+
+#quang-cao div p {
+	font-size: 25px;
+	border: 2px solid black;
+}
+
+#quang-cao > div > p {
+	font-size: 25px;
+	color: red;
+}
+
+#ds-hoc-vien {
+	font-size: 25px;
+}
+
+#ds-hoc-vien .hs-gioi {
+	color: orange;
+}
+
+.hk-tot {
+	color: green;
+}
+
+.hs-gioi.hk-tot {
+	color: red;
+}
+
+li.hs-gioi.hk-tot {
+	color: red;
+}
+
+li, p {
+	background: white;
+}
+
+ul#ds-hoc-vien li:first-child {
+color: red;
+}
+
+ul#ds-hoc-vien li:last-child {
+color:green;
+}
+
+ul#ds-hoc-vien li:nth-child(3) {
+color: blue;
+}
+
+ul#ds-hoc-vien li:nth-child(odd) {
+background: gray;
+}
+
+ul#ds-hoc-vien li:nth-child(3n+1) {
+background: black;
+}
+
+input[type="text"] {
+	color: red;
+}
+
+input[id="username"] {
+	color: red;
+}
+
+input[loai="matkhau"] {
+	color: green;
+}
+
+ul li:not(:nth-child(2)) {
+	color: red;
+}
+
+ul li:not(#hoctrocung) {
+	color: red;
+}

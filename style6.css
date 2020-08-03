@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	border: 1px solid red;
+	width: 500px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+		flex-direction: row;
+
+}
+
+#wrapper div {
+	border: 1px solid black;
+	background: gray;
+	margin: 0 5px;
+}
+
+#sidebar1 {
+	height: 100px;
+		flex-grow: 5;
+}
+
+#content {
+	height: 100px;
+		flex-grow: 2;
+}
+

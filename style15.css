@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+a:link {
+	text-decoration: none;
+}
+
+
+body {
+	font-family: Roboto, sans-serif;
+}
+.container {
+	max-width: 1140px;
+	margin: 0px auto;
+}
+
+/* Header */
+header {
+	height: 80px;
+	background: #333333;
+}

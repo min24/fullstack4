@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+#box {
+	width: 400px;
+	height: 300px;
+	background: red;
+	padding: 30px 15px 25px 40px;
+	border: 5px solid;
+}
+
+h1 {
+	width: 500px;
+	height: 250px;
+	background: yellow;
+	padding: 20px;
+	border: 3px solid black;
+	box-sizing: border-box;
+}
+
+#link-web {
+	margin-top: 30px;
+	border: 1px solid red;
+	width: 300px;
+	height: 150px;
+}
+
+#xyz {
+	display: block;
+}
+
+#asd {
+	width: 300px;
+}
+
+#link {
+	width: 200px;
+	border: 4px solid black;
+	display: block;
+	height: 100px;
+}
+
+#first {
+	display: inline;
+	width: 200px;
+	background: red;
+}
+
+#wrapper div {
+	width: 33%;
+	display: inline-block;
+	border: 2px solid black;
+	color: green;
+	font-size: 20;
+}
+
+#wrapper {
+	letter-spacing: 0px;
+}
