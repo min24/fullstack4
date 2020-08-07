@@ -9,6 +9,9 @@ a:link {
 	text-decoration: none;
 }
 
+li {
+	list-style: none;
+}
 h2 {
 	font-size: 36px;
 	font-weight: normal;
@@ -33,8 +36,9 @@ body {
 	font-family: Roboto, sans-serif;
 }
 .container {
-	max-width: 1140px;
+	max-width: 1170px;
 	margin: 0px auto;
+	padding: 0px 15px;
 }
 
 /* Header */
@@ -92,6 +96,7 @@ header .container ul li a.active {
 	background-image: url(images/image14/pic.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 }
 
 #hero .container {
@@ -103,7 +108,7 @@ header .container ul li a.active {
 #hero .container h2,
 #hero .container p,
 #hero .container div {
-	max-width: 620px;
+	max-width: 660px;
 }
 
 #hero .container h2 {
@@ -136,6 +141,10 @@ header .container ul li a.active {
 	line-height: 40px;
 	color: white;
 	margin-left: 11px;
+}
+
+#hero .container div a:first-child {
+	margin-left: 0px;
 }
 
 #hero .container div a:hover {
@@ -319,14 +328,13 @@ display: inline-block;
 
 }
 
-
 #team-list > div {
-	
+	width: calc( (100% - 90px) / 4);
 }
 
-
-#team-list > div > > div > img {
+#team-list > div > div > img {
 	display: block;
+	max-width: 100%;
 }
 
 #team-list .mask {
@@ -681,6 +689,7 @@ display: inline-block;
 	background-image: url(images/image14/map.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 }
 
 #contact #contact-info > div, 
@@ -840,3 +849,241 @@ footer ul li:nth-child(5) a {
 	width: 15px;
 	background-size: 15px 18px;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 960px) {
+	#hero .container h2,
+	#hero .container p,
+	#hero .container div {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+
+	#hero .container ul {
+		position: static;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	#about .container > div > div:first-child {
+	width: 50%;
+	}
+	#about .container > div > div:last-child {
+	width: 50%;
+	}
+
+	
+	#team-list > div {
+	width: calc( (100% - 45px) / 4);
+	}
+
+	#contact-info form .two-col {
+	display: block;
+	}
+	#contact-info form .two-col div {
+	width: 100%;
+	}
+	#contact-info form .two-col div input {
+	margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 845px) {
+	header {
+		height: auto;
+	}
+	header ul {
+		text-align: center;
+	}
+	header .container {
+		display: block;
+	}
+	header .container h1 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header h1 {
+		line-height: 50px;
+	}
+	header ul li {
+		line-height: 50px;
+	}
+	header ul li a {
+		margin-left: 0px;
+	}
+	#hero {
+		height: 530px;
+	}
+
+	#hero .container {
+		padding-top: 100px;
+	}
+
+	#about .container {
+		padding-top: 30px;
+	}
+
+	#about .container h2 {
+	margin-bottom: 20px;
+	}
+
+	#about .container > div {
+		display: block;
+	}
+		#about .container > div > div:first-child {
+	width: 100%;
+	margin-bottom: 30px;
+	}
+	#about .container > div > div:last-child {
+	width: 100%;
+	}
+
+	#about ul {
+		padding-top: 21px;
+		text-align: center;
+	}
+
+	#about .container > div > div:first-child {
+		margin-bottom: 30px;
+	}
+
+	#team {
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+	#team-list {
+		margin-top: 25px;
+		flex-wrap: wrap;
+	}
+	#team-list > div {
+		width: calc( (100% - 30px) / 2);
+		margin-bottom: 30px;
+	}
+	#team-list > div > div > img {
+		width: 100%;
+	}
+	#work-list > div {
+		width: calc( (100% - 30px) / 2 );
+	}
+
+	#what-we-do {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	#what-we-do ul li {
+		width: calc( (100% - 30px) / 2);
+		margin-bottom: 88px;
+	}
+	#what-we-do h2 {
+		margin-bottom: 65px;
+		text-align: center;
+	}
+
+	#feature {
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+	#feature h2 {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+
+	#feature-list {
+		display: block;
+	}
+
+	#feature-list div {
+		width: 100%;
+	}
+
+	#feature-list div img {
+		margin: 0px auto;
+		display: block;
+	}
+	#feature-list div h4 {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+	#contact {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	#contact h2 {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	#contact-info {
+		margin-top: 0px;
+		display: block;
+	}
+	#contact-info > div {
+		padding-top: 30px;
+		width: 100%;
+	}
+	#contact-info > form {
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#hero .container {
+		padding-top: 40px;
+	}
+	#hero .container h2 {
+		font-size: 27px;
+	}
+	#hero .container h2,
+	#hero .container p,
+	#hero .container div {
+		max-width: 100%;
+	}
+	#about ol li:before {
+	display: none;
+	}
+	#about ol li {
+		padding-left: 0px;
+	}
+
+	#team-list > div {
+		width: 100%;
+	}
+
+
+	#work-list > div {
+		width: 100%;
+	}
+	#work-list > div > img {
+		width: 100%;
+	}
+	#what-we-do ul li {
+		width: 100%;
+	}
+	#contact-info form div button {
+		width: 100%;
+	}
+	footer {
+		height: auto;
+	}
+	footer div {
+		display: block;
+		line-height: 50px;
+	}
+
+	footer p {
+		text-align: center;
+	}
+	footer ul {
+		text-align: center;
+	}
+
+
+} 
