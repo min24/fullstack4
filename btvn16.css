@@ -538,3 +538,113 @@ header #header-main {
 #work .container button:hover {
 	background-color: #016a7d;
 }
+
+/* What we do */
+
+#we-do .container {
+	margin-top: 87px;
+	margin-bottom: 162px;
+}
+#we-do h2 {
+	color: #292f36;
+}
+
+#do-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 90px;
+}
+
+#do-list > div {
+	display: inline-block;
+	width: calc( (100% - 90px) / 4);
+	text-align: center;
+	margin: 0 auto;
+}
+#do-list > div > div {
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 35px;
+}
+#do-list > div:nth-child(1) > div {
+	background-image: url(images/image14/1.png);
+}
+#do-list > div:nth-child(2) > div {
+	background-image: url(images/image14/2.png);
+}
+#do-list > div:nth-child(3) > div {
+	background-image: url(images/image14/3.png);
+}
+#do-list > div:nth-child(4) > div {
+	background-image: url(images/image14/4.png);
+}
+#do-list > div:nth-child(5) > div {
+	background-image: url(images/image14/1.png);
+}
+#do-list > div:nth-child(6) > div {
+	background-image: url(images/image14/2.png);
+}
+#do-list > div:nth-child(7) > div {
+	background-image: url(images/image14/3.png);
+}
+#do-list > div:nth-child(8) > div {
+	background-image: url(images/image14/4.png);
+}
+#do-list > div> h4 {
+	text-transform: uppercase;
+	color: #292f36;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+#do-list > div> p {
+	color: #8d8f92;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+/* Features */
+
+#features {
+	background-color: #3a454d;
+	padding-top: 85px;
+}
+
+#features h2 {
+	color: white;
+}
+#features h2:before {
+	background-color: #4e5a62;
+}
+
+#fe-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+
+#fe-list > div {
+	width: calc( (100% - 60px) / 3);
+	background-color: transparent;
+}
+#fe-list > div > img {
+	max-width: 100%;
+	margin-bottom: 41px;
+}
+#fe-list > div > h3 {
+	color: #d7d8d9;
+	line-height: 42px;
+	margin-bottom: 13px;
+}
+#fe-list > div > p {
+	color: #dcdfe1;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 120px;
+}
