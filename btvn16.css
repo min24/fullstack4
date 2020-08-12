@@ -825,6 +825,7 @@ footer ul li:nth-child(5) a {
 	padding: 0px 0px;
 	}
 	#header-top {
+		height: 100px;
 		width: 100%;
 	}
 	#header-top .container {
@@ -840,15 +841,18 @@ footer ul li:nth-child(5) a {
 	#menu {
 		height: 60px;
 	}
-
+	#menu > ul > li {
+		margin-top: 10px;
+	}
 	#menu > ul > li > a {
 		font-size: 14px;
 		text-transform: uppercase;
 		color: #a4aead;
 		border: 2px solid transparent;
 		border-radius: 5px;
-		padding: 8px 10px;
+		padding: 6px 10px;
 		margin-left: 8px;
+		
 	}
 
 	#menu > ul > li > #home {
@@ -897,7 +901,13 @@ footer ul li:nth-child(5) a {
 	#team-list .mask {
 		display: block;
 		position: absolute;
-		right: 0px;
+		right: 3px;
+		top: 0px;
+	}
+	#team-list > div:hover .mask ul{
+		display: block;
+		position: absolute;
+		right: 3px;
 		top: 0px;
 	}
 	#team-list .mask ul li a  {
@@ -1103,8 +1113,11 @@ footer ul li:nth-child(5) a {
 
 @media screen and (max-width: 540px) {
 	#header-main .container h1 {
-		margin-top: 80px;
+		margin-top: 120px;
 		text-align: center;
+	}
+	#header-main .container p {
+		margin: 15px auto;
 	}
 	#work-list {
 		display: flex;
@@ -1133,6 +1146,14 @@ footer ul li:nth-child(5) a {
 	}
 	#form {
 		margin-top:  20px;
+	}
+	footer {
+		height: auto;
+		line-height: 30px;
+	}
+	footer > div {
+	display: flex;
+	flex-wrap: wrap;
 	}
 
 }
