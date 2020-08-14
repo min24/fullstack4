@@ -51,3 +51,4 @@ loadImage(
 console.log(1);
 
 setTimeout(() => console.log('Xong'));
+
