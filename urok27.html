@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar 27</title>
+<style type="text/css">
+    .selectbox {
+        display: inline-block;
+        padding: 3px 10px;
+        border: 1px solid black;
+        position: relative;
+    }
+    .selectbox > span {
+        display: block;
+        padding: 3px 10px;
+    }
+    .selectbox > div {
+        
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        border: 1px solid #333333;
+        min-width: 100%;
+        display: none;
+    }
+    .selectbox.opened > div {
+        display: block;
+    }
+    .selectbox > div > div {
+        border-bottom: 1px solid #ebebeb;
+        cursor: pointer;
+    }
+    .selecbox > div > div:hover {
+        background-color: #ebebeb;
+    }
+    
+</style>
+</head>
+
+<body>
+    Hay chon thanh pho
+    <div class="selectbox" id="city">
+        <span>Vui long chon:</span>
+        <div>
+            <div>Ha Noi</div>
+            <div>Hai Phong</div>
+            <div>Da Nang</div>
+            <div>Ho Chi Minh</div>
+        </div>
+    </div>
+    <div class="selectbox" id="animal">
+        <span>Vui long chon:</span>
+        <div>
+            <div>Dog</div>
+            <div>Cat</div>
+            <div>Snake</div>
+            <div>Fish</div>
+        </div>
+    </div>
+</body>
+<script src="script27.js"></script>
+</html>

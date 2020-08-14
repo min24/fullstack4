@@ -1,0 +1,84 @@
+.body {
+    position: relative;
+}
+    .classTab {
+        width: 300px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      
+        
+      }
+      .classTab .tabs {
+        display: flex;
+        flex-grow: 1;
+      }
+      
+      .classTab .tabs > span {
+        display: inline-block;
+        flex-grow: 1;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        text-align: center;
+        background: gray;
+        cursor: pointer;
+      }
+      .classTab .tabs:last-child > span {
+        border-right: 1px solid black;
+      }
+      
+      .classTab .tabs > div {
+        display: none;
+      }
+      .classTab .tabs.opened > span {
+          background-color: rgb(182, 182, 182);
+      }
+      .classTab .tabs.opened > div {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 298px;
+        display: flex;
+        border: 1px solid black;
+      }
+      .classTab {
+          margin-bottom: 30px;
+      }
+/*=============================*/
+
+.modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0,0, 0.5);
+}
+
+.modal > div {
+    height: 300px;
+    width: 500px;;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 200px auto;
+    position: relative;
+}
+
+.modal > div > div {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.close {
+    display: none;
+}
