@@ -12,5 +12,4 @@ function component() {
   document.body.appendChild(component());
 
 
-
-console.log("fxckhvjgh");
+import {person as nguoi, modal} from './modules/modal.js';

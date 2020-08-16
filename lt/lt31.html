@@ -1,0 +1,136 @@
++ import va export 
++ export module va require js
+
++ Gan giong nhau 
++ Thay ngta dung ntn thi minh su dung nhu vay 
+
+export:
+    + export ra mot object => import { ten cac properties}
+    + import * as => nhan tat ca as abc 
+        + abc.person()
+    
+    + import { property } as nguoi;
+
+import: 
+    + quet luon node_modules
+    + ko viet ./ phia trc
+    + ./ la thu muc hien tai chua file
+
+require: 
+    + sao chep code tu cac file khac sang 
+    + impport cua es6 => compile => require 
+
+
+==================================
+
+Vue js:
++ Framework javascript 
+
+Hoc js framework:
++ Tim hieu cac khai niem cua fw do 
++ Bi nhieu khai niem cung luc 
++ Hoc cach cai dat 
+
+Vue:
+    + 2 cach cai:
+        + dung 1 file js
+        + dung vue cli 
+    + Doi tuong Vue(optionns)
+        + el: element: Trong mot ung dung Vue => co 1 element  goc
+        => root element
+    + Xuat 1 du lieu len html: {{ }}
+        // div.innerHTML = 'vibonpkm'
+    + data: 
+        + la cac thuoc tinh (property) cua doi tuong vue
+        + data hien thi len html bang dau {{ }}
+    + 2 ways binding:
+        + Khi o tren html thay doi, thi o duoi js thay doi 
+        + Khi js thay doi thi html thay doi
+    + model:
+        + Mau 
+        + la 1 cach thuc lein ket giua element html va js 
+    + v-show: element se hien thi khi gia tri la true
+    VD: tab 
+
+
+Doi tuong chinh rat to, dooi tuong Vue 
+
+event: 
++ click xa ra:
+    + show thong bao
+    + DOM element 
+
+js huong doi tuong:
++ class website 
+    + menu 
+    + network 
+    + sidebar 
+    + modal 
+
+
+Vue-cli:
+    Cai dt:
+    + Tao project: vue create [ten project]
+    + babel: cong cu build js => giong webpack 
+    + eslint: la mot cong cu sua loi js
+    + server: tao ra server + watch
+
++ File.vue
+    + 3 phan:
+        + thanh phan hien thi
+        + thanh phan xu li
+        + style.css
+    + Khi file.vue => build ra => tu dong nhat js rieng, css rieng, html rieng 
+
+    + trong file vue: 
+        + data must be a function 
+
++ Binding: 
+    + La viec thay doi html dua theo data 
+    + Day su thay doi tu du lieu len phan hien thi 
+    + v-bind: 
+        v-bind: [ten thuoc tinh]=
+        :[ten thuoc tinh]
+
+        + gia tri cua v-bind:
+            + neu la mot ten bien => gia tri cua data
+            + la 1 object: 
+    + v-model:
+        + La cach de lien ket giua mot form element voi data
+        + Kieu du lieu ca data => Tuy thuoc vao loai element
+
++ Event:
+    + v-on:[ten event]
+    + v-on:click = @click
+
++ v-show: chi dinh 1 element co hien thi hay ko dua theo data (dang boolean)
+          van con tren html, chi display none
++ v-if: tuong tu, nhung xoa han the trong html di
+
+
+
+Vong lap:  
+    + Vong lap for
+    + Muon hien thi nhieu phan tu
+    + v-for 
+    + key: v-bind:key
+        :key
+
+Vue:
+    data
+Vue 3: 
+    JSX
+
+React:
+    state
+ 
+BTVN: 
+    + Tao 1 trang lam bai trc nghiem
+    + Du lieu dc viet trc trong data
+    + Lam trc nghiem:
+        + Hien thi mot cau hoi
+        + tich chon dap an
+        + Bam nut next sang cau tiep theo
+        + Co the quay lai cau hoi phia trc
+    + Khi het cau hoi:
+        + hien thi ket qua: bao nhieu cau dung, bao nhieu cau sai

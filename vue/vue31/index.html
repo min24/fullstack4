@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="name">
+        {{ message }}
+        {{ name }} 
+        <!---Khi o input thay doi gia tri thi dong nay cung thay doi gia tri--->
+        <!--Vi cung co ten la name trong Vue-->
+    </div>
+
+    <div id="app2">
+        <div>
+            <li @click="currentTab = 1">Tab 1</li>
+            <li @click="currentTab = 2">Tab 2</li>
+            <li @click="currentTab = 3">Tab 3</li>
+        </div>
+        <div v-show="currentTab == 1">Noi dung tab 1</div>
+        <div v-show="currentTab == 2">Noi dung tab 2</div>
+        <div v-show="currentTab == 3">Noi dung tab 3</div>
+    </div>
+
+    <div id="app3">
+        <button @click="show = !show">Toggle div</button>
+        <div v-show="show">Hien thi noi dung button</div>
+    </div>
+</body>
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="script.js"></script>
+</html>
