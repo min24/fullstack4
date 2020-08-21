@@ -1,0 +1,81 @@
++ component: 
+	+ La 1 tap hop cac the html
+	+ Co 3 thanh phan chinh:
+		+ thanh phan hien thi
+		+ thanh phan xu ly
+		+ thanh phan style
+			+ CSS
+			+ SCSS: them 'lang="scss' vao the html r sd
+				+ tuong tu css nhung de dung hon
+			+ scoped: chi style css cho file vue hien tai, ko anh huong toi phan code cua ng khac
+	+ Cac component tach biet nhau, co the su dung nhieu
+
++ lifestyle: 
+	+ hook
+	+ 
+
++ methods: 
+	+ ham
+
++ watch: khi data thay doi thi se lam gi
+	+ 2 tham so: newValue, oldValue
+	+ Khi watch object hoac array:
+		+ deep: true => watch ca cac item con
+		+ immediate: true => ngay lap tuc, khi dang watch object hay array
+			+ true => khi phat hien thay doi thi xu ly luon, thuc hien nhanh
+			+ false => lap qua tat ca cac phan tu xem co thay doi khong, ktra het r moi thuc hien callback, dung khi cac phan tu lien ket voi nhau
+
+BT 1: 
++ sd kthuc vuejs da hoc de tao todoList
+	+ danh sach: todos
+	+ nut xoa
+	+ nut tich hoan thanh
+	+ tab: tat ca (so cv), da lam (so cv), chua lam (so cv)
+	+ them nut dau cong, khi bam se hien ra model, de tham tab moi
+		+ input
+		+ save
+		+ cancel
+
+
+BT2: select multiple (lua chon mon hoc)
+	+ 2 cot
+		+ cot 1: list cac mon hoc
+			+ khi tich vao se nhay sang cot ben phai
+
++ props: 
+	+ Gia tri lay tu ben ngoai vao
+	+ Chi co the thay doi ben trong
+	+ Giong het data, va co the lay gia tri tu ben ngoai vao
+	+ prop: chi co the truyen mot chieu
+		neu la string, number
+		neu la object, array thi co the 2 chieu
+	+ Cach khai bao props: 
+		+ Dung 1 mang ten prop
+		+ Dung object
+
++ filters: 
+	+ du lieu tu data se di qua filters trc khi hien thi, 
+	VD: chuyen doi 1000000 => 1.000.000
+	+ La ham dung giua thanh phan xu ly va thanh phan hien thi
+	=> cach hien thi thay doi
+
+	+ tham so: tham so dtien chinh la dtg sd, tu tham so thu 2 tro di a tham so them vao 
+
+	VD: hien thi data thanh bieu do => sd ham filter
+
+BT: 
+	+ tao trang mua hang, gom:
+		+ ds san pham dang ban, 3 cot:
+			+ ten
+			+ gia
+			+ mua
+		+ ds san pham da chon, 3 cot nhu tren
+			+ thay nut mua bang nut xoa
+
+	+ khi bam nut mua phia tren se hien thi phia duoi
+		+ cuoi cung co tong gia tien, yeu cau donvi dong
+		+ yeu cau  quy doi sang USD, format tuong tu
+
+	+ Phia tren cung co checkbox hien thi dau cham hay dau phay
+
+Chia thanh cac component can than
