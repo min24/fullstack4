@@ -10,15 +10,17 @@ Vue.use(VueRouter)
 // define routes
 import routes from './routes.js'
 
-console.log(routes);
 
 const router = new VueRouter({
 	mode: 'history',
 	routes: routes,
 });
 
+export const bus = new Vue();
+
 
 new Vue({
   render: h => h(App),
   router: router,
-}).$mount('#app')
+}).$mount('#app');
+

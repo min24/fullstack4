@@ -1,14 +1,15 @@
 <template>
   <div id="app">
+    <div>ABC</div>
     <div id="sidebar">
       <ul>
-        <li><a href="inbox">Hop thu den</a></li>
-        <li><a href="important">Quan trong</a></li>
+        <li><router-link :to="{ name: 'inbox' }" > Hop thu den</router-link></li>
+        <li><router-link :to="{ name: 'important' }" >Quan trong</router-link></li>
       </ul>
     </div>
 
     <div id="content">
-      Noi dung
+      
       <router-view></router-view>
     </div>
 
@@ -18,7 +19,14 @@
 <script>
 
 export default {
+  data() {
+    return {
+      inboxMail: [],
+      importantMails: []
+    }
+  },
   components: {
+    
     
   }
 }

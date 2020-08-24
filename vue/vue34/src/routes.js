@@ -7,12 +7,12 @@ import IncomingSettings from './components/settings/IncomingSettings.vue'
 
 export default [
 	{
-		path: '/mail-inbox', 
+		path: '/inbox', 
 		component: Inbox,
 		name: 'inbox',
 	},
 
-	{path: '/important', component: Important},
+	{path: '/important', component: Important, name: 'important'},
 
 	{
 		path: '/settings',
