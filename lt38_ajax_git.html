@@ -77,7 +77,7 @@ Github:
 		+ dang co mot nhanh tren local repo
 		+ nhanh nay khi push len github  => thanh ten mot nhanh nao do
 
-		
+
 'Git checkout remote to local branch'
 
 Dat ten nhanh:
@@ -85,3 +85,30 @@ Dat ten nhanh:
 	feature/register
 	fixbug/login
 	hotfix/login
+
+Git flow:
+	+ la cach ma cac lap trinh vien lam viec voi nhau
+	+ Day la cach lam viec o cac  cty
+
++ Master
++ dev (development) => chua code cua ca team
++ cac nhanh feature (feature/login)
+
+La 1 thg lap trinh vien chan trinh:
++ De lam 1 tinh nang:
+	+ e lam 1 tinh nang dang ky
+	+ git checkout -b feature/register dev => copy code cua team ve
+	+ Viet code
+	+ push len nhanh feature/login cua minh
+	+ Tao merge request (pull request)
+
+Fix bug tinh nang dang ky:
+	+ git branch: xem dang o nhanh nao
+	+ git checkout -b fixbug/register origin/dev
+
+
+La 1 team leader:
+	+ Kiem tra cac pull request
+
+merge: thao tac tron code
+
