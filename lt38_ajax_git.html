@@ -1,0 +1,87 @@
+ajax => sau => 
+	 => kthuc ve server, localhost, domain
+
+Backend => kho, chiem 2/3, nen chu y
+
+html/css/jquery/boostrap/psd to html/vue/react 
+
+- git (git flow - cac cty thuc te)
+- docker
+
+
++ Hoc: 
+	+ Cam thay minh tien bo
+	+ 
+
+
+Git: 
++ La mot phan mem quan ly phien ban (version control)
++ La mot cong cu cho cac lap trinh vien lam viec voi nhau
+
++ Co 2 phan:
+	+ Git server: may chu git => kho chua code
+		+ Github
+		+ Gitlab
+		+ Bitbucket
+
+	+ Git client: la phan mem chay tren may tinh 
+	=> tuong tac voi git server
+
+Github:
++ Respository:
+	+ la mot kho chua code => moi du an => tren mot repo
+	+ Fork: copy repo thanh cua minh
+	+ Issues: loi
+	+ Wiki: giong blog ve repo do
+	+ Insight: thong ke, repo code dc nhieu/it, ai push nhieu/it
+	+ Setting: 
+	+ Github Pages
+	+
++ Cac thao tac tren git:
+	+ Clone: Tai code tren server ve, lay project tu github ve
+	git clone [dia chi]
+	+ thu muc .git => la mot thu muc dac biet => cau hinh
+		+ thay thu muc nay => day la mot git project
+	+ pull: tai code tren server ve
+	+ push: day code len server
+		+ 2 buoc: 
+			+ buoc 1: day len local repo
+				+ git add => them vao ds tracked files
+				+ git commit => day len local repo
+					-m: message
+			+ buoc 2: 
+				+ git push: day code len server
+				+ can than trc khi day code len, nen push ban hoan hao nhat
+
+
+
++ ssh:
+	+ la 1 phuong thuc ket noi
+	+ ssh key:
+		+ Khoa ket noi giua may tinh voi git
+		+ Co 2 file:
+			+ secret key: khoa bi mat => nam tren may
+			+ public key: khoa cong khai, nam tren github
+
+
++ branch: nhanh
+	+ master: nhanh goc
+	+ checkout: nhay den 1 nhanh nhat dinh
+		git checkout feature/login
+		git checkout master
+
+	git checkout -b feature/login master: tao 1 branch moi tu nhanh master
+
+	+ git branch --set-upstream-to origin/BRANCH 
+	+ set-upstream: 
+		+ dang co mot nhanh tren local repo
+		+ nhanh nay khi push len github  => thanh ten mot nhanh nao do
+
+		
+'Git checkout remote to local branch'
+
+Dat ten nhanh:
+	feature/login
+	feature/register
+	fixbug/login
+	hotfix/login

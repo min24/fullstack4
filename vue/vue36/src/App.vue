@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <button @click="show1 = !show1">Show</button>
+
     <transition name="cool" :duration="1000">
       <div v-show="show1">
       Content
       </div>
     </transition>
+    
     <br>
     <button @click="show = !show">Add to cart</button>
     <transition name="message" v-on:afterEnter="afterShowMessage">
