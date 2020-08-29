@@ -1,0 +1,86 @@
+Thao tac xu ly chuoi
+
++ khi hoc 2 ngon ngu:
+	+ tim hieu su khac biet
+
+
+Bien moi truong: 
+	+ $_GET: lay cac tham so tu url
+	+ $_POST: lay tu form
+	+ $_REQUEST:  tong hop cua GET va POST
+	+ $_SERVER: ko sua dc => server co gtri j thi n in ra cai day
+	+ $_SESSION: luu tren server
+	+ $_COOKIE: giong session, luu tren trinh duyet (client)
+
+Diem khac biet giua bien $_GET va bien $_POST
+
++ $_GET: 
+	+ sd khi du lieu ngan
+	+ user co the gui linh cho nhau
+	+ sd khi doc du lieu ra
+
+
++ $_POST: 
+	+ user ko the gui link cho nhau dc
+	+ du lieu nang: bai viet dai, upload file
+	+ dung khi them du lieu, sua du lieu, xoa du lieu (bao mat)
+
+Khi chuyen sang trang khac => moi thong tin deu bi quen lang
+
+SESSION => giai quyet vde nay
+SESSION: la 1 bien ma tat ca cac trang deu co the truy cap
+
+De sd sesion: bat session len: session_start()
+
+cthe sd o tat ca cac trang
+	+ cung 1 ten mien
+	+ cung 1 server
+
+- Session phu thuoc vao trinh duyet, user
+- dung lam phan dang nhap
+- SESSION luu o dau: 
+	+ session luu tren server
+
+- SESSION va COOKIE co lien he j:
+	+ cookie luu session id
+	+ neu ko co cookie => session se bi quen
+	+ session id: 
+		+ id: identification => dinh danh => ten rieng, phan biet voi session khac
+
+	+ deu co thoi gian song
+		+ tinh tu luc truy cap lan cuoi
+
+
+	+ Khi dat bien session:
+		+ tao ra 1 file tren server de luu tru
+		+ tao ra 1 cookie tren trinh duyet => luu ten cua file
+
+Khi doc bien session:	
+	+ trinh duyet gui bien cookie len server
+	+ server thay cookie => co ten file => doc file ra
+
+Hack: 
+	+ Neu nhu ai do co cookie => chiem dc tai khoan
+
+hack bang xss:
+	+ chiem dc cookie thi chiem quyen tren server
+
++ neu ai do co dc session id tren cookie thi co dc session
+
+
+
+Lam trang dang nhap:
++ username password
+
+
+isset() => ktra 1 bien ton tai hay chua => tra ve true/false
+
+BTVN:
+- Lam 1 trang dang nhap voi ten truy cap va mk co san
+- Trang thoat
+- Trang tai khoan
+
+Bai hom sau: 
++ Quan trong:	
+	+ require, include
+	+ composer, php oop.

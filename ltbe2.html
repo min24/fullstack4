@@ -1,0 +1,119 @@
++ Trinh soan thao code:
+	+ sublime ko nen dung
+
++ PHP: file chay php:
+	+ window: php.exe => xamp/bin/php.exe
+
+PHP: 
+	+ php thread:
+		+ Di phong van ngta hay hoi
+		+ PHP phan thanh cac luong (thread)
+		+ Moi request la 1 luong
+		+ Cac request dc xu ly rieng biet, ko lien quan toi nhau
+		+ Moi luong (thread) co:
+			+ execute time: Thoi gian xu ly
+			=> neu qua thi bao loi
+			max_execute_time
+			+ Dung luong bo nho nhat dinh
+			Khi code => bo nho ko dc vuot qua ding luong moi thread
+			+ Phai cau hinh dung luong hop ly
+		+ Khi code PHP ko lo chet toan bo server
+
+
+Nodejs: 
+	+ Xu ly tren 1 luong
+
++ Bien trong php:
+	+ Bien khai bao
+
+	+ Bien moi trg: 
+		+ tu no co
+		+ la cac array
+		+ $_SERVER
+		+ $_GET: la cac tham so dc lay tu dia chi url
+		abc.com/index.php?name=nguyen&age=30&location=hanoi
+		+ $_POST => la tham so dc lay tu form
+		+ $_SESSION
+		+ $_COOKIE
+		+ $_REQUEST
+
++ Cac thao tac xu ly bien:
++ Tham chieu, tham tri:
+	+ Tat ca deu la tham tri
+		async by value
+	+ Co the chu dong dat la tham chieu:
+		dat dau & phia trc: $b = &$a;
+
+	+ string: 
+		+ explode: tach chuoi
+		+ implode('-', $words): gop chuoi
+		+ strlen: string length: lay ra do dai chuoi
+		+ substr(str, start, end): cat chuoi
+	+ array:
+		+ count: dem so phan tu cua mang
+		count(arr)
+
+		+ mang co the co key hoac ko:
+			@student = [
+			'name' => 'nguyen',
+			'age' => 30];
+
+			$student['name']
+
+			$student = ['nguyen', 'tung'] //key tu dong
+
+		+ array_filter(arr, name_function)
+		+ array_reduce
+		+ array_map
+		+ array_slice
+		+ array_ splice
+		+ array_shift: xoa ptu dtien
+		+ array_unshift: them 1 ptuu vao vtri dtien
+		+ array_pop: xoa ptu cuoi cung va tra ve ptu cuoi cung
+		+ array_merge: tron 2 hay nhieu mang
+		array_merge(arr1, arr2, arr3, ..)
+		+ array_unique: loai bo cac ptu giong nhau
+			+ Neu mang ko co key thi unique gtri
+			+ Neu mang co key thi unique theo key
+
+		+ array_keys: tra ve 1 mang keys
+
+		+ Lap mang:
+			for ($i = 0; $i < count($student); $i++){
+			echo $student[i];
+		}
+
+			foreach($student as $value){
+			echo $key . ':' . $value . "<br>";
+		}
+
+			foreach($student as $key => $value){
+			echo $key . ':' . $value . "<br>";
+		}
+
+
+
+	+ function: 
+		function cong($a, $b = 0) {
+		return $a + $b;
+		}
+
+		+ PHP 7: co the bat buoc phai tra ve kieu du lieu nhat dinh
+
+		function cong($a, $b = 0) : int {
+		return $a + $b;
+		}
+
+		+ Neu ko dat kieu du lieu tra ve:
+			+ php cthe tra ve bat ky kieu du lieu nao
+			return mixed
+
+
+	+ object: 
+		+ object trong php bat buoc phai khoi tao tu class
+		+ stdClass: la 1 class trong, ko co j ben trong
+
+		$person = new stdClass)=();
+		$person->name = 'nguyen';
+		print_r($person);
+
