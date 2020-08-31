@@ -1,0 +1,60 @@
++ oop:
++ Lap trinh huong doi tuong
++ La cach lap trinh theo tu tuong
+	=> tao ra cac doi tuong va cac doi tuong tuong tac voi nhau
+
+
++ Cach khai bao class:
+	+ tu khoa class
+	+ class: ko phai la mot bien
+	+ tao ra 1 thuc the tu class, thi class moi co y nghia
+	+ constructor: 
+		__construct() {}
+		Tham so:
+
+	+ __destruct
+		Chay khi thuc the (instance) bi huy
+	+ Thuoc tinh (properties):
+		+ 
+	+ Ke thua: 
+		+ Goi constructor cua class cha (super ben js)
+			+ parent::__construct();
+
+	+ Trong lap trinh huong doi tuong co 
+		+ 3 cap do truy cap:
+			+ public => cthe lay du lieu bat ki dau
+			+ protected => cthe lay dc du lieu o class cha va cac class con
+			+ private => chi cthe lay trong class do
+
+		+ Thuoc tinh: bat buoc phai co tu khoa truy cap
+		+ Ham: neu public thi ko can
+
+	+ static property va static function:
+		+ static property ko the sua doi
+		+ la thuoc tinh, hoac ham => cthe lay ma ko can khoi tao doi tuong
+		+ cac thu vien hay sd cai nay
+	+ singleton: la 1 cach viet code:
+
+	+ namespace: 
+		+ Khong gian ten
+		+ Goi (package)
+		+ Khi co nhieu lap trinh vien cung code voi nhau
+		+ khi su dung thu vien o tren mang
+	
+	+ Khi tao thuc the (instance):
+		+ Phai viet day du namespace:
+		$tom = new company\duy\conMeo()
+
+		+ sd tu khoa use:
+			+ giong import
+			use company\duy\conMeo;
+			$tom = new conMeo();
+
+		+ use as:	sd class vs 1 ten khac
+			use company\duy\conMeo as meoCuaDuy;
+
+			$tom = new meoCuaDuy();
+
+
+
+

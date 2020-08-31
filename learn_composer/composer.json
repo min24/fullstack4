@@ -1,0 +1,14 @@
+{
+    "name": "minmin/learn_composer",
+    "authors": [
+        {
+            "name": "MinMin",
+            "email": "nguyenduy0204.xy@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "nesbot/carbon": "^2.39"
+    }
+}

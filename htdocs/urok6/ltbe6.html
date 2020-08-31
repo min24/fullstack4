@@ -1,0 +1,111 @@
+Abstract class:
+
++ overide: Ghi de
+	+ viet ten ham giong het => ghi de
+
++ abstract class:
+	+ dc sd khi thiet ke he thong
+	+ la class co so
+	+ quan trong nhat
+	+ thg dc viet boi cac ltv co kinh nghiem
+	+ tao abstract class: 
+		+ dat tu khoa abstract phia trc class
+	+ cthe dinh nghia cac abstract function
+	+ abstract function la cac ham rong, ko dc viet j vao ben trong
+	+ bat buoc cac class con phai co cac ham dc abstract o class cha
+	(thiet ke trc cac class can co cua classc con)
+	VD: khi tao class user thi bat buoc phai co ham login
+
+	La cac thiet ke co ban cua mot doi tuong
+
++ interface: giao dien
+	+ dc sd rat nhieu
+	+ la nhuwng tinh nang rieng le dc sd cho nhieu class
+
+
+
+VD: code 1 game vuon thu vui ve
+- con ngua: biet chay
+- ca: boi
+- dai bang: biet chay, bay
+- ca sau: chay, boi
+
++ con rong: chay, bay, boi
+------------------------------
+
+
+class conVat {
+
+}
+
+class conVatBietChay extends conVat {
+	
+}
+
+class conVatBietBoi extends conVat {
+	
+}
+
+class conVatBietBay extends conVat {
+	
+}
+
+class conNgua extends conVatBietChay {
+	
+}
+
+
+class conCa extends conVatBietBoi {
+	
+}
+
+
+class daiBang extends conVatBietBay {
+	
+}
+======================================
+interface: chay, boi, bay
+class conVat;
+
+
+
++ Su khac nhau giua abstract class va interface
+	+ deu la nhug tp trong lap trinh bat buoc cac class con khai bao dtg
+
+	+ abstract class la ban thiet ke co ban cua 1 dtg
+
+	+ interface la ban thiet ke cua cac tinh nang rieng biet, cthe dc sd cho nhieu dtg
+	+ interface
+
+
+
+
++ abstract, interface: thiet ke cac doi tuong, chua thuc hien 1 chuc nang j ca
++ trait: 
+	+ la tap hop cac cai ham
+	+ giong copy paste trong class
+	+ giong include, require, nhung trong class
+	+ sd tu khoa use
+	+ sd ket hop voi interface
+Cu 1 interface se di cung 1 trait
+
+
+BTVN:
+Thiet ke 1 game giao thong van tai
++ Cac phuong tien
++ Moi phuong tien:
+	+ property: trong tai
+	+ function: 	
+		+ xepHangLenPhuongTien
++ Co nhung ptien:
+	+ hang khong: bay
+	+ duong thuy: di tren mat nuoc
+	+ duong bo: di chuyen tren duong 
+
+
++ Sang tao them:
+	+ Van dug het nhung kthuc da hoc
+	+ show hang
+	+ code  codeSandbox
+		+ viet cac file, class php
+		

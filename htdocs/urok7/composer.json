@@ -1,0 +1,12 @@
+{
+    "name": "minmin/urok7",
+    "authors": [
+        {
+            "name": "MinMin",
+            "email": "nguyenduy0204.xy@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.39"
+    }
+}

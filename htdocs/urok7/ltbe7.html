@@ -1,0 +1,85 @@
+Composer
+
++ js: package manager: npm
++ npm init
+
++ composer
++ composer init: khoi tao project composer
+
++ npm: package.json  => file cau hinh npm
+
++ composer.json
+	+ luu cau hinh
+	+ luu danh sach cac goi
+	+ require
+
+	npm: dependencies: cac goi 
+
+
++ npm: node_modules => chua cac files thu vien
++ vembor: chua cac file thu vien
+
+-npm install => cai dat cac goi co trong package.json
+-composer install => cai dat cac goi co trong composer
+-composer remove [ten goi] => xoa mot goi
+
+- package.lock => khoa phien ban
+- composer.lock => khoa phien ban
+
+npn install [ten goi] --save-dev
+Luu vao dev dependencies:
++ la cac goi => chi su dung trong qua trinh phat trien phan mem
+
+Cac goi phuc vu cho viec test, migrate
+
+composer require [ten goi] --dev
+
+
++ commposer create-project [ten goi] ten_project_tren_may
+=> ko cai dat vao vendor, ma lay goi da cho thanh project 
+=> copy 1 project co san lam project cua minh
+
+
+Cac goi:
+	+ cai dat them va su dung
+	+ Goi thu vien
+
++ sd thu vien 
++ require autoload
++ vendor/autoload.php
+=> la mot file => require toan bo cac goi
+=> thay doi lien tuc
+	+ khi cai them 1 goi moi
+
++ cap nhap lai autoload: composer dump-autoload
+
+Cac framework => da tu dong require autoload cho chung ta roi
+
++ Su dung thu vien:
+	npm install jquery
+	+ import jquery from "jquery"
+
+	+ require 'vendor/autoload.php' => la 1 file require tu dong het cac thu vien can thiet
+	
+- Khi website chay, ko bao h dc bao loi tren production
+
+
+PHP error handing:
+=> xu ly loi
+=> bao loi: error handler
+=> Tat thong bao loi
+error_reporting: la cau hinh so luong error ma server chua dc
+
+ini_set('error_reporting', 1); thay doi cau hinh php, => cai dat chi hien 1 dong loi trong php_error_log, tat error di thi de display_errors = false
+
+=> tat thong bao loi khi tren production
+
+
+
+try catch
+Exception: ngoai le => loi
++ sd try catch khi ko biet cho nao bi loi trong moi doan code dai
++ Doan code kho biet tat ca cac trg hop
+
+throw: nem ra mot ngoai le
+
