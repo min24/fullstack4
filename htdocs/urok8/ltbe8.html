@@ -1,0 +1,110 @@
+Ket noi den co so du lieu
+- user: root : mac dinh
+- password
+- server id hoac server name
+- port: 3306
+
+
+innoDb
+MyIsam
+
+
+Trong mysql: 
+	- nhieu ng dung
+Database: schema
+
++ index: mysql danh chi muc (danh muc luc) => tang toc do
+
+Danh index cho cot du lieu:
++ Tang toc do doc du lieu
++ Cham khi ghi du lieu
+	+ Khi them 1 sinh vien
+		+ Them vao bang user
+		+ Them vao muc luc
+? Cot nao danh index cot nao khong:
++ Dua theo giao dien
+VD: co phan tim kiem theo ten => cot name danh index
+
+
+Tao index trong mySQL workbench: 
+	Vao muc indexes
+
++ Cac he thong lon co 2 server:
+	+ 1 doc
+	+ 1 ghi
+
+
+
++ Cac ieu du lieu:
+	+ int => integer => unsigned: ko am
+	+ bigint
+
+	+ VARCHAR(45) => string, gioi han so luong ki tu
+		+ slg ki tu tuy thich
+	+ default
+	+ CHAR(45) => string, gioi han slg ki tu
+		+ neu ko du thi mysql se them ki tu dau cach vao cho du
+		+ slg ki tu co dinh
+	+ text: string => chuoi, nhung dai hon, vd noi dung bai viet
+		+ tinitext: 255 ki tu
+		+ text: 65k ki tu
+		+ medium text: 
+		+ long text: 4gb
+	+ time: thoi gian 08:57
+	+ date time :ngay + gio 04:40 2/4/2020
+	+ date: ngay
+	+ year: nam
+	+ timestamp: ngay gio dac bit
+		+ dang so
+		+ so giay ke tu ngay 1/1/1970 den nay
+		+ Ko can biet ngay do la ngay nao, chi quan tam den su kien trc sau
+		=> de dang so sanh trc sau
+	+ float
+	+ decimal
+	+ ENUM('nam', 'nu'): gia tri chi co trong danh sach
+		Gia tri chi la nam or nu, ko co gtri khac
+
+
+NN => not null
+AI => auto increment
+
+
+
+
+
+
+
++ quanlysinhvien
+	+ users: luu thong tin ng dung
+		+ id (identity): dinh danh => danh so => 1-2-3-4-5
+			+ ma: ma so sinh vien
+			+ dung de phan biet cac dong du lieu voi nhau
+			+ sd so de toc do nhanh hon
+			+ AI: auto increment: tu dong tang
+		+ username
+		+ password
+		+ name
+	+ teachers
+		+ id
+		+ name
+
+
+
+
+Backup, restore database
+
+server => data export
+
+DB ENGINE trong mysql:
+	+ InnoDb
+	+ MyISAM
+Neu su khac nhau giua hai cai tren (in the exam)
+	+ co che locking (khoa)
+		InnoDb khoa tung dong mot: row level locking
+		=> nhanh, de sai
+		MyISAM khoa bang: table level locking
+		=> cham, dam bao
+Chuyen j se xay ra neu 2 ng cung sua 1 dung du lieu
+	+ khi 1 ng xem se khoa dong du lieu lai, de sua
+	+ sua xong thi mo khoa cho ng tiep theo
+	Lan luot lan luot

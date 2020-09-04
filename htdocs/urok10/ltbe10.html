@@ -1,0 +1,59 @@
+
+
+- categories:
+	+ id
+	+ name
+
+- products:
+	+ id
+	+ name
+	+ 
+
+
+Cac thao tac voi csdl:
+
+Ban chat cua cau lenh sql la tao ra 1 bang moi tu cac bang co san
++ xem
+	+ doc du lieu
+	+ select
+	+ doc tu mot bang du lieu
+	SELECT [danh sach cac cot] FROM [ten bang]
+
+	SELECT * FROM [ten bang]
+
+	+ Select va doi ten cot: AS
+	+ Doi ten bang
+	+ Dieu kien WHERE [ten cot] [dau so sanh] [gia tri]
+	+ Dieu kien WHERE [ten cot] [dau so sanh] [ten cot]
+	+ Nhieu dieu kien WHERE: AND, OR
+	+ WHERE IN
+	WHERE categories IN (2, 4)
+
+	+ WHERE NOT IN
+	+ WHERE LIKE => tim kiem tuong doi
+		% => dai dien cua bat ki ki tu nao
+	+ WHERE NOT LIKE
+
+
++ Select tu 2 bang:
+
+SELECT
+	name AS ten_sp,
+	price AS gia,
+FROM
+	productions san_pham,
+	categories danh_muc
+WHERE
+	san_pham.category_id = danh_muc.id
+
+
+
+
+
++ them 
++ sua 
++ xoa
+
+- Quy tac dat ten bang, cot:
+	+ ko dc trung voi ten tu khoa SQL
+

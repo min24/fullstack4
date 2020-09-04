@@ -1,0 +1,161 @@
++ Quan he giua cac bang:
+
++ primary key: khoa chinh (id) => xac dinh moi lien he voi bang khac
++ foreign key: khoa ngoai => cot dung de lien ket voi bang khac
+
+
+Xoa mot danh muc san pham:
+	+ Xoa tat ca san pham tron gdanh muc do
+	+ Xoa danh muc
+
++ Options: 
+	+ on update: khi sua
+		set null: cot foreign key => null
+		restrict: ko the sua neu dang co lien he
+		no action
+	+ on delete: khi xoa
+
+- Cac loai quan he:
+	+ 1 - 1
+		1 row bang A ~ 1 row bang B
+	+ 1 - n
+		1 row bang A ~ n row bang B
+	+ n - n
+		n row bang A ~ n row bang B
+		n row bang B ~ n row bang A
+
+		+ Dinh nghia: 
+			+ dung 1 bang trung gian
+
+VD: thiet ke co so du lieu cua mot cua hang
+
++ users:
+	id
+	username
+	password
+	phone
+	adress
+	height
+	weight
+	...
+=> cthe tach thanh 2 bang
+
+user_info
+	user_id (lien he voi is)
+	username
+	password
+
+1 dong du lieu bang user_info tuong ung voi 2 dong du lieu users
+
+
+VD: thiet ke co so du lieu cua mot cua hang
+
++ categories
+	id
+	name
+
++ products
+	id
+	category_id
+	name
+
+1 dong du lieu cua bang categories => tuong ung nhieu dong du lieu bang products
+
+================================
+
+Dat ten database:
+	+ ten _project
+	+ ko dat chu hoa
+	vi code php chay hoi khac nhau o cac mtrg khac nhau
+	+ dung dau gach duoi
+	+ dat ten random => kho doan => kho hack
+
+Dat ten bang:
+	+ phan biet so it, so nhieu
+	+ 1 so framework php => xay dung model nhan so nhieu
+	ORM => object relation maping
+
+	pre_fix: de doi ten bang thg xuyen, hacker kho doan
+
+Ten cot:
+	+ chu thg
+	+ so it
+	+ boolean: type: boolean
+		+ is_[tinh tu]
+
+VD: users:
+	id
+	username
+	is_active
+
+=================================
+VD mqh n - n
+
++ san pham
++ danh muc
+
+- mot san pham nam trong nhieu danh muc
+- 1 danh muc chua nhieu san pham
+
+VD trg hoc:
+
++ students
+	id
+	name
+
++ teachers
+	id
+	name
+
+1 hs dang nhap se xem dc cac gv cua anh ay
+2 gv dang nhap se xem dc cac hs cua anh ay
+
++ student_teacher_relationshiop
+	+ id
+	+ student_id
+	+ teacher_id
+
+BTVN:
+Thiet ke co so du lieu cua 1 trang web rut gon link:
+	+ phai dang nhap moi dc rut gon link
+	+ user phai dc active qua email moi dc dang nhap
+	+ admin xoa user => cac link rut gon cua user do ko thuoc va ai
+
+	+ Khi tao link, cthe dat tag (the) => dat nhieu the cung dc
+	+ khi tao link, cthe cho link vao 1 danh muc (doi song, suc khoe, xa hoi)
+
+	+ trang hien thi cac link moi nhat vua moi tao
+		+ create_at
+	+ khi ng dung tim kiem thi luu tu khoa tim kiem do lai
+		+ thuc hien tim kiem theo tieu de cua cai link => danh index cho tieu de
+
+	+ trang tao link:	
+		+ dien tieu de
+		+ dien link
+		+ dien cac tag
+		+ chon danh muc
+		+ bam nut rut gon
+
+
+Viet ra cac bang, cac cot
+
+
+??? Trong bt nay dung innoDB hay MyIsam
+
+web nho:
+	+ muisam
+web lon:
+	+ can nhac chon engine
+	Doc la chu yeu hay sua la chu yeu
+	Kha nang sai lech co cao ko
+	
+Chon db engine:
+	+ Doc du lieu: ko anh huong
+	+ Anh huong:
+		Khi update du lieu nhieu vao 1 row
+
+
+innoDB: lien ket giua cac bang long leo hon
+MyIsam: lien ket giua cac bang chat che hon
+	+ Khi 1 bang dang update thi cac bang lien quan bi lock het
+	(lock ca table)
