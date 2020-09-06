@@ -1,0 +1,152 @@
+
+
+php upload (dang form)
+	+ upload anh len server
+	+ chua tam vao mot noi
+	+ move_uploaded_file => di chuyen den noi mong muon
+	+ Luu y: 
+		+ Thao tac voi files/thu muc
+		=> luon phai check quyen: chmod (change mode)
+
+		chmod: phan quyen
+		chown: change owner: quyen so huu
+
+php gd: php image processing: tao anh voi php
+
+
+
+$_POST['dsfdf']
+
+$_FILES["fileToUpload"]['tmp_name']
+
+
+move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], 'upload/abc.jpg')
+
+//=====================================
+
+MVC: la mot mo hinh viet code
+
+Cau tao cua mvc:
+	+ model: cac class do cta tu dat
+	+ view: thanh phan hien thi
+		Gom cac the html
+	+ controller: 
+		+ la san choi cho cac model tuong tac voi nhau
+		+ Tao cac thuc the cua model 
+
+		Controller: san dau
+			+ coVoi chienDau => caSau
+
+Sua giao dien => sua view
+Sua doi tuong => sua model
+Sua cach cac dtg tuong tac voi nha => sua controller
+
+
+VD:
+
+class sanDau extends controller {
+	public function __construct(){
+	$conVoi = new conVoi();
+	$caSau = new caSau();
+
+	$conVoi->chienDau($caSau);
+}
+}
+
+
+
+class chuyenTien extends controller {
+	public function __construct(){
+	$nguoiGui = new User(1);
+	$nguoiNhan = new User(2);
+
+	$nguoiGui->chuyenTien($nguoiNhan);
+}
+}
+
+Framework Laravel:
++ Laravel
++ Lumen: phien ban rut gon => ho tro micro service
+
+
++ Cach cai dat
+	+ cai dat bang composer
+	+ chi sd ban 6x, hoac 5x
+
+Cau truc thu muc Laravel:
+	+ co php
+	+ co bo khung javascrip
+	=> tich hop voi vuejs
+Ctruc:
+	+ composer.json
+	+ package.json
+	+ .env => file moi truong, file cau hinh
+	+ vendor => thu muc chua cac thu vien
+	+ bootstrap va storage: thu muc cache => luu tam
+	+ public: la thu vien cong cong da dc dua len  web
+		+ js
+		+ css
+		+ image
+	+ config: thu muc chua file cau hinh
+		+ auth.php: cau hinh dang nhap
+		+ session
+		+ database
+		...
+	+ resources: 
+		+ js
+		+ lang: ngon ngu
+		+ sass: scss => css
+		+ views: tp hien thi
+	+ routes: 
+		+ nhan request tu ng dung va tro den controller de xu ly
+	+ app:
+		+ Hau het code cua chung ta se nam o day
+		+ Http:
+			+ controllers: chua cac controller
+			+ kernel.php
+	linux kernel:
+		la tp dc chay dau tien cua 1 he dieu hanh
+
+	+ database: 
+		Deploy => len server => tu dong
+		+ migration: thao tac voi database
+		+ seeds: seeder => tao du lieu mau
+
+
++ Artisan: 
+	+ La mot cong cu cua Laravel
+		+ php artisan
+		+ php artisan serve: start server
+
+		+ php artisan make:controller [ten Controller]
+		+ php artisan make:model [ten model]
+
+		+ php artisan down: dua web ve trang thai bao tri, ko nhan 1 request nao nua
+
+	php artisan up
+
+		+ php artisan config:clear => xoa het cac cache cua config
+		+ pgp artisan config:cache => clear xong lai cache lai
+			+ cu khi nao sua config hoac .env thi phai chay lai lenh tren
+		
+		+ php artisan key:generate => tao 1 key moi
+
+		+ php artisan cache:clear => xoa het cache cua toan bo ung dung
+
+
+
+
++ khi nang cap web len phien ban moi:
+	+ sua database:
+		Dua ve trang thai bao tri
+
++ Sua config => cap nhap va cache => luu tam
+
++ Tao chuc nang dang nhap: 
+	
+
+php artisan ui vue --auth
+npm install
+php artisan config:cache
+
+php artisan migrate

@@ -1,0 +1,86 @@
+
+
+PHP =>  truy van du lieu bang php
+
+BT thiet ke csdl
+
+Driver => 
+PHP => mysql
+=> driver php-mysql
+
+
+class mysqli() => co san
+Moi may chu mysql:
++ bat che do remote: co the truy cap tu xa thong qua ip
++ tat che do remote
+=> chi co the truy cap tu may day
+
+
+new mysqli([server_name or ip], [username], password, (optional)port)
+
+
+
+Hoc php:
+	+ ko ai co the nho het cac ham
+
+Viet code php:
+	+ sd object thay cho array thi code de doc hon
+
+Ham die('text'): Xuat ra text r thoat khoi chuong trinh luon
+
+Tao ra data model
+
+SQL injection:
+	+ khi ma user nhap linh ta linh tinh vao muc username
+=======================================
+
+4 thao tac:
++ doc du lieu
+	+ query($sql_query)
+	+ fetch du lieu
+		+ Duyet qua tung dong du lieu
+		+ 3 thao tac fetch
+			+ fetch_array() => duyet thanh mang
+			+ fetch_assoc() => duyet thanh mang ket hop
+				+ associative array
+			+ fetch_object() => duyet thanh object
+	+ statement:
+		Cau lenh
+		Chuan bi 1 cau lenh sql san trc
+		$statement->bind_param([kieu du lieu])
+			s: string
+			i: integer
+			d: decimal
+
++ them du lieu
++ sua du lieu
++ xoa du lieu
+
+
+'nguyenbv' : day la reference
+$username: day la value
+NOTE: trong function thi phai dung value, ko dung dc reference
+
+==========================
+
+Phan mem quan ly sinh vien
+
+class user {
+	
+}
+
+$user1 = new user(11);
+
+=> can model hoa du lieu
+
+$donDatHang = new donDathang();
+
+
+==================================
+
+Tao ra mot class database:
+
+
+BT:
+	Tu viet class database
+	Viet cach su dung

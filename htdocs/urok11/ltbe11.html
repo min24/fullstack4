@@ -1,0 +1,77 @@
+
++ Join:
+	+ Ghep 2 bang lai voi nhau
+	+ Bang A gheo voi bang B
+
++ 4 loai join:
+	+ left join: uu tien bang ben trai
+		+ neu bang ben trai ma null => ben phai cung null
+
+	+ right join: uu tien bang ben phai cua du lieu
+
+=> Neu left join thi tong so dong du lieu tra ve bang so dong du lieu bang ben trai, tuong tu voi right join, ben phai
+
+	+ inner join: Giao cua 2 ben 
+	+ outer join: 
+	+ full outer join: 
+
+UNION ALL:
+	Gop 2 bang co so dong bang nhau lai
+
+
+
+SELECT * FROM products
+LEFT JOIN categories
+ON categories.id = products.category_id
+
+
+SELECT * FROM products
+LEFT JOIN categories
+ON categories.id = products.category_id
+UNION ALL
+SELECT * FROM categories
+LEFT JOIN products
+ON products.category_id = categories.id
+
+
++ select sum SUM
++ select average AVG
++ FLOOR: lam tron
++ ORDER BY price ASC, name DESC
+
++ Them: 
+	+ INSERT INTO [table]([ten field]) VALUES9[values]
+
+	INSERT INTO products(price, name, category_id)
+	VALUE(9999, 'Dien thoai huawei', null)
+
+
++ Sua:
+	+ UPDATE [table] SET field=value, [table] SET field=value
+	=> WHERE ....
+	+ update nhieu cot (field)
+
++ Xoa: 
+	+ DELETE [table] WHERE ....
+
++ Transaction:
+
+2 cau lenh update
+
+begin transaction:
+	
+	update acounts set amount = amount -1000000 where id = 1
+	update acounts set amount = amount + 1000000 where id = 2
+
+end transaction
+
+Hanh dong
+	+ commit: thanh cong
+	+ rollback: that bai
+
+Xoa mot danh muc:
+	+ Viet cac lenh xoa danh muc
+	+ Viet lenh xoa san pham trong danh muc
+
+
+
