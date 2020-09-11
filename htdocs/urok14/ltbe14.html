@@ -1,0 +1,67 @@
+- composer
+- Cau truc thu muc cua laravel
+- Route
+	+ GET
+	+ POST
+	+ route params
+	+ dat te cho route
+	+ route group: tap hop cac route co cung thuoc tinh
+
+- Request: 
+	La 1 object, chua toan bo thong tin client gui len
+
+- Route resource:
+	+ Doc bai viet
+	+ Them bai viet
+	+ Sua bai viet
+
+php artisan make:controller [name controller] --resource 
+=> tu dong tao ra 1 so ham co ban sd cho route 
+
+http request:
+	+ get
+	+ post
+	+ put
+	+ update
+	+ delete
+	+ option
+
+search google laravel route
+?: optional: co the co co the ko
+
+Dat ten cho route 
+
+Route group:
+	Tap hop 1 nhom route
+
+
+Diem kho khi hoc framework:
+	+ phai hoc nhieu thu cung luc
+
+
+- request:
+	
+	Route::resource('/aaa', 'aaabbb')
+
+
+Route group:
+	/admin/users
+	/admin/articles
+
+Sub domain routing
+
+prefix, group
+
+//=========================================
+
+Request:
+
+php artisan make:request ArticleRequest --resource
+authorize
+
+
+
+article/save: 
+
+
+strpos: ktra 1 tu co nam trong nhom tu nao do ko 
